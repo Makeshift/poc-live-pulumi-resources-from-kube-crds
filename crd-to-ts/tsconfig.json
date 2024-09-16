@@ -1,0 +1,54 @@
+{
+  "include": [
+    "**/*.ts"
+  ],
+  "compilerOptions": {
+    "alwaysStrict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "strict": true,
+    "declaration": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "lib": [
+      "esnext"
+    ],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "emitDeclarationOnly": true,
+    "allowImportingTsExtensions": true,
+    "noEmitOnError": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "resolveJsonModule": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "stripInternal": true,
+    "target": "ESNext",
+    "composite": false,
+    "incremental": true,
+    "tsBuildInfoFile": "./tsconfig.tsbuildinfo",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "types": [
+      "node"
+    ],
+    "noErrorTruncation": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolvePackageJsonImports": true
+  },
+  "ts-node": {
+    "esm": true,
+    "skipIgnore": true,
+    "experimentalSpecifierResolution": "node",
+    "experimentalResolver": true,
+    "files": true,
+    "preferTsExts": true,
+    "pretty": true,
+    "transpileOnly": true
+  }
+}

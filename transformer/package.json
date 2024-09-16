@@ -1,0 +1,27 @@
+{
+  "name": "https-import-transformer",
+  "main": "index.ts",
+  "nx": {
+    "includedScripts": [
+      "build"
+    ]
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tspc"
+  },
+  "workspaces": [
+    "examples/*"
+  ],
+  "devDependencies": {
+    "@types/esm": "^3",
+    "@types/node": "^18",
+    "@types/ts-expose-internals": "npm:ts-expose-internals@5.5.2"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "ts-node": "^10.9.1",
+    "ts-patch": "^3.2.1",
+    "typescript": "5.5.2"
+  }
+}

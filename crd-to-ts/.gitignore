@@ -1,0 +1,29 @@
+# p h a t b o i
+node_modules
+# Yarn
+.yarn
+# Log files
+*.log
+# Nx / Lerna
+.nx/cache
+.nx/workspace-data
+# Unless it's jest config
+!jest.config.js
+# or eslint
+!eslint.config.js
+# Generated package files
+*.tgz
+# Local CodeBuild build outputs
+local_codebuild_build_output
+# Environment-specific files, not shared
+*.env
+# Generated TS files, only needed when packaging
+*.d.ts
+*.tsbuildinfo
+# CDK outputs
+cdk.context.json
+.cdk.staging
+cdk.out
+# Personal vscode workspaces
+*.vscode.code-wokspace
+!default.vscode.code-workspace

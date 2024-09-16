@@ -1,0 +1,26 @@
+{
+  "name": "crd-to-ts",
+  "main": "index.ts",
+  "nx": {
+    "includedScripts": [
+      "build"
+    ]
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "morph": "node --loader ts-node/esm --no-warnings src/build.ts"
+  },
+  "packageManager": "yarn@4.2.2",
+  "dependencies": {
+    "@pulumi/kubernetes": "^4.18.1",
+    "@pulumi/pulumi": "^3.132.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18",
+    "crdtoapi": "^0.0.19",
+    "ts-morph": "^23.0.0"
+  }
+}

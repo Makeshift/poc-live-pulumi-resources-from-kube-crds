@@ -1,0 +1,64 @@
+{
+  "include": [
+    "**/*.ts",
+    "*.ts"
+  ],
+  "compilerOptions": {
+    "alwaysStrict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "strict": true,
+    "declaration": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "lib": [
+      "esnext"
+    ],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    // "emitDeclarationOnly": true,
+    "allowImportingTsExtensions": true,
+    "noEmitOnError": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "resolveJsonModule": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "stripInternal": true,
+    "target": "ESNext",
+    "composite": false,
+    "incremental": true,
+    "tsBuildInfoFile": "./tsconfig.tsbuildinfo",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "types": [
+      "node"
+    ],
+    "extendedDiagnostics": true,
+    "noErrorTruncation": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolvePackageJsonImports": true,
+    "plugins": [
+      {
+        "transform": "https-import-transformer",
+        "isEsm": true,
+        "transformProgram": true
+      }
+    ]
+  },
+  "ts-node": {
+    "compiler": "ts-patch/compiler",
+    "esm": true,
+    "skipIgnore": true,
+    "experimentalSpecifierResolution": "node",
+    "experimentalResolver": true,
+    "files": true,
+    "preferTsExts": true,
+    "pretty": true,
+    // "transpileOnly": true
+  }
+}
